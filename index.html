@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pisk Pizzas - A Melhor Pizza da Cidade</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/pizza-ico.svg" type="image/x-icon" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ee4b2b",
+              "background-light": "#f8f6f6",
+              "background-dark": "#181211",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "Noto Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "1.5rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="w-full dark:bg-background-dark font-display text-white md:max-w-[1024px] md:mx-auto"
+  >
+    <div class="relative w-full flex-col group/design-root overflow-x-hidden">
+      <!-- Header -->
+      <header
+        class="sticky top-0 z-50 flex items-center bg-background-dark/80 backdrop-blur-sm p-4 justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-3xl"
+            >local_pizza</span
+          >
+          <!--           <h1 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Pisk Pizzas</h1> -->
+          <img
+            src="./images/logo-white.webp"
+            alt="logo-pisk-pizzas"
+            class="h-10 w-auto"
+          />
+        </div>
+        <div class="flex items-center justify-end">
+          <a
+            href="cardapio.html"
+            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 w-12 bg-transparent text-white"
+          >
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </a>
+        </div>
+      </header>
+      <!-- HeroSection -->
+      <main>
+        <div class="relative @container">
+          <div class="@[480px]:p-4">
+            <div
+              class="flex min-h-[60vh] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center"
+              data-alt="A delicious looking pizza with melted cheese and fresh basil"
+              style="
+                background-image: linear-gradient(
+                    rgba(24, 18, 17, 0.8) 0%,
+                    rgba(24, 18, 17, 0.5) 100%
+                  ),
+                  url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgtlkbfb_ddiKQk4DZl3dqsIo04ZVaOtk0-SIQaOtA4v_LlVqjsnaU4_nNgT0lZLbpZ9A-uniOotcfZBDBVyfhhhuE-On20ldxayEuqqxs5wSzpnd9IHLoLDAWAwHBtu5XDxbvIeoT7aC1NTEtBLDebT9Fgs6WAxhFidFy-PgY3oG5SL-mBDFUAETXlJDFGjkbIiWtyBhQAzy0J_GBTVfd_v2lHcJMTDQvi93udPuriLJWePZKlf2W8sg0rv8eVANUP5xO08tqbptM');
+              "
+            >
+              <div class="flex flex-col gap-2">
+                <h2
+                  class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                >
+                  A Melhor Pizza da Cidade
+                </h2>
+                <p
+                  class="text-gray-200 text-base font-normal leading-normal @[480px]:text-lg"
+                >
+                  Ingredientes frescos e massa de fermentação natural.
+                </p>
+              </div>
+              <a                
+                class="flex w-full max-w-sm cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full h-12 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                href="https://wa.me/5553991282870?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido..."
+              >
+                <span class="material-symbols-outlined">send</span>
+                <span class="truncate">Faça aqui seu Pedido via </span>
+                <span class="truncate"
+                  ><img
+                    src="./images/whats.svg"
+                    alt="logo-whatsapp"
+                    class="h-4 w-auto"
+                /></span>
+                <span class="truncate">WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Sabores Mais Pedidos Section -->
+        <section class="py-8">
+          <h3
+            class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5"
+          >
+            Sabores Mais Pedidos
+          </h3>
+          <div
+            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4"
+          >
+            <div class="flex flex-col gap-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                data-alt="Pizza Margherita com tomates frescos, manjericão e queijo mussarela"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYH_yuIzIQVijIs9i6xycu3Mb4iIr6CirytboIHq0dis7eTX_ajVZdTjygbqaHfUE3iKsP4O54_uwZjE3-rvzSr0SftTMfiBBfXbFKA6ErN-5t3UvYXPYcE47HDVoF5WVT_XBiPXSXqbDX7nokDBDlNv_94fB6E6VZBgjCMO6HwWFoLYXsA8VtkOGYv0p0stuQ1wCb_pHiZNsE4i9F9V0XAhxof-6Ek5r7Wd5fs_2S85aq_b2JxursjGvryffINCTUEgB0I8UhQ-jU');
+                "
+              ></div>
+              <div>
+                <p class="text-white text-base font-medium leading-normal">
+                  Pizza Margherita
+                </p>
+                <p class="text-gray-400 text-sm font-normal leading-normal">
+                  Molho de tomate, mussarela, tomates e manjericão frescos.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                data-alt="Pizza de Pepperoni com fatias picantes e queijo derretido"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBridKgz8CxfMwEiq1Legup-d4n-skjLHNkZLiTk6TOi54cwqhVgxqo3eiyEMWf_ImgeocxB-433spB1g0lNdyOvxvG1_DyxPDxsU0Xf8VXmeaYfDYpW9C35fQqh2Qe7m0ZNeBcxXwtvwW44toPHISoRBmqQnuBqUz_8cY94nysa-FApyIUi5bgjuqG3x3QKGUJoAbCW0BC8DdBZP56jf4W0JgBnNTyZCR3BlvZVQJKf-_GKZT7ZkXQruM8SkvMWtg_AKon5pwNanli');
+                "
+              ></div>
+              <div>
+                <p class="text-white text-base font-medium leading-normal">
+                  Pizza Calabresa
+                </p>
+                <p class="text-gray-400 text-sm font-normal leading-normal">
+                  Molho de tomate caseiro com calabresa fatiada sobre queijo mussarela.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                data-alt="Pizza de quatro queijos com diversos tipos de queijo gratinados"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCF9Lh9w0gAXjZgeNbInlDjgJ-9NsMuSeORhPRf68v4AuFgDknELSRw1nkB5JhtRqTmhmT6pofbOOwk4fEyW-uLps3WuTWmqIwiv7BKjhBYG-i08X8dsBcJLpu-ZLk3lEKF7s7xhAwsW7qyyrXnQTqDWXLqyiP86z5R8xnX-vYLoUlQ9Jtfx_9hMR6dAvE-ZYElzDgAQ4xAUSYkNteWepO-lKThEHK4KXrbF362iwWCZJQ3u5jcf5r5gqUpJewXxBC-YFMwQ2apWJLr');
+                "
+              ></div>
+              <div>
+                <p class="text-white text-base font-medium leading-normal">
+                  Pizza Quatro Queijos
+                </p>
+                <p class="text-gray-400 text-sm font-normal leading-normal">
+                  Mussarela, Provolone, Cheddar e Requeijão.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                data-alt="Pizza de frango com requeijão, bem cremosa e com frango desfiado"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUD7mtbYtH22WpT6Suz9RdUl0kWpU-pfC_XJbUJpRZMRtZ8d8MF0PwFIyxl99_amUIaj0b3a_mHTYZe_LMmSyoJ2RCESSNo-31-AZ177nbGAkcmY6_D62BQ-pJZv46WyrMQsVnpPHLmdtMzoPVl-qQTNAiPK7T3GE0VjwMv_i_h2pnj47Yd0X1fsCFrT2ykvpdoMTG9PnAm1J0Z45O7l5Sk4A15l5LoKXFrrYJgJRaCRxVAM-vdC4gvmU6o9Or6bzH2-YiBHdzaOip');
+                "
+              ></div>
+              <div>
+                <p class="text-white text-base font-medium leading-normal">
+                  Pizza Frango c/ Requeijão
+                </p>
+                <p class="text-gray-400 text-sm font-normal leading-normal">
+                  Frango desfiado com muito requeijão
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex px-4 py-3 justify-center">
+            <a
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#392b28] text-white text-base font-bold leading-normal tracking-[0.015em]"
+              href="./cardapio.html"
+            >
+              <span class="truncate">Ver Cardápio Completo</span>
+            </a>
+          </div>
+        </section>
+        <!-- Depoimentos Section -->
+        <section class="py-8 bg-black/20">
+          <h3
+            class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5 text-center"
+          >
+            O que nossos clientes dizem
+          </h3>
+          <div
+            class="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-4"
+          >
+            <div
+              class="flex flex-col gap-4 bg-[#392b28] p-6 rounded-lg min-w-[80%] md:min-w-[40%] snap-center"
+            >
+              <div class="flex items-center gap-2">
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span>
+                </div>
+              </div>
+              <p class="text-gray-200 italic">
+                "A melhor pizza que já comi! A massa é perfeita e os
+                ingredientes são muito frescos. Atendimento nota 10!"
+              </p>
+              <p class="font-bold text-white">- Maria Silva</p>
+            </div>
+            <div
+              class="flex flex-col gap-4 bg-[#392b28] p-6 rounded-lg min-w-[80%] md:min-w-[40%] snap-center"
+            >
+              <div class="flex items-center gap-2">
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star_half</span>
+                </div>
+              </div>
+              <p class="text-gray-200 italic">
+                "Simplesmente incrível. O sabor da pizza de pepperoni é
+                inigualável. Virou minha pizzaria favorita!"
+              </p>
+              <p class="font-bold text-white">- João Pereira</p>
+            </div>
+            <div
+              class="flex flex-col gap-4 bg-[#392b28] p-6 rounded-lg min-w-[80%] md:min-w-[40%] snap-center"
+            >
+              <div class="flex items-center gap-2">
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span
+                  ><span class="material-symbols-outlined">star</span>
+                </div>
+              </div>
+              <p class="text-gray-200 italic">
+                "Atendimento rápido e pizza deliciosa. A de quatro queijos é de
+                outro mundo. Recomendo muito!"
+              </p>
+              <p class="font-bold text-white">- Ana Costa</p>
+            </div>
+          </div>
+        </section>
+        <!-- Localização Section -->
+        <section class="py-8 px-4 max-w-[450px] mx-auto">
+          <h3
+            class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 pt-5"
+          >
+            Nossa Localização
+          </h3>
+          <!-- <div class="w-full h-64 bg-gray-700 rounded-lg overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Mapa mostrando a localização da Pisk Pizzas"
+              data-location="Pelotas"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaZVgQtKT-hq9MVIHujkZydCsOH0qcHpuD0-VZcdjiH_m39F2ODkjgd6L0l-cQb0yLvhH9PSaz26Ya0aEbtfZ1LlsHGLvIbA6vm4Wg1wgYyTSEAkUHsBzkHtI1YmrsNHrzPv2KdvXf-gf_kZA-bOoOdJWeT3zXOCPb8ZYusPimfBAGCybifS8w13on4q9XBDHJkvA4u-X3lO4lEirZfJrrAJWXiSB98boIvC_OXP1Htb0SHdrz75nVCm8MMs3oUTi3UDEKR9Ewawpg"
+            />
+          </div> -->
+          <div
+            class="mapouter"
+            class="w-full max-w-[450px] h-70 bg-gray-700 rounded-lg overflow-hidden"
+          >
+            <div
+              class="w-full h-64 bg-gray-700 rounded-lg overflow-hidden"
+            >
+              <iframe
+                width="500px"
+                height="500px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?q=pisk%20pizzas%20pelotas&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 mt-6 text-gray-300">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1"
+                >location_on</span
+              >
+              <div>
+                <p class="text-white font-semibold">Endereço</p>
+                <p class="text-sm text-white/80" >Rua Armando Fagundes 475 - Areal, Pelotas-RS</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1"
+                >call</span
+              >
+              <div>
+                <p class="text-white font-semibold">Telefone</p>
+                <p class="text-sm text-white/80">(53) 99128.2870</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1"
+                >schedule</span
+              >
+              <div>
+                <p class="text-white font-semibold">Horário de Atendimento</p>
+                <p class="text-sm text-white/80">Segunda a Domingo: 18:00 - 22:30</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="bg-black/40 py-8 px-4 text-center text-gray-400">
+        <div class="flex justify-center gap-6 mb-4">
+          <a
+            aria-label="Instagram"
+            class="text-gray-300 hover:text-primary transition-colors"
+            target="_blank"
+            href="https://www.instagram.com/piskpizzas"
+            ><svg
+              class="feather feather-instagram"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewbox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg
+          ></a>
+          <a
+            aria-label="Facebook"
+            class="text-gray-300 hover:text-primary transition-colors"
+            href="https://www.facebook.com/share/1RFMNWzZgj/"
+            target="_blank"
+            ><svg
+              class="feather feather-facebook"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewbox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              ></path></svg
+          ></a>
+          <a
+            aria-label="Whatsapp"
+            class="text-gray-300 hover:text-primary transition-colors"
+            href="https://wa.me/5553991282870"
+            ><svg
+              class="feather-message-circle"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewbox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              ></path></svg
+          ></a>
+        </div>
+        <p class="text-sm">© 2025 Pisk Pizzas. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  </body>
+</html>
