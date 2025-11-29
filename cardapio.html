@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cardapio Pisk Pizzas</title>
+    <title>Cardapio Best Pizza</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
@@ -13,7 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/pizza-ico.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="images/pizza-logo.svg"
+      type="image/x-icon"
+    />
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -51,12 +55,16 @@
           <span class="material-symbols-outlined text-primary text-3xl"
             >local_pizza</span
           >
-          <!--           <h1 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Pisk Pizzas</h1> -->
-          <img
-            src="./images/logo-white.webp"
+          <h1
+            class="text-white text-xl font-bold leading-tight tracking-[-0.015em]"
+          >
+            Best Pizza
+          </h1>
+          <!-- <img
+            src="./images/pizza-logo.svg"
             alt="logo-pisk-pizzas"
             class="h-10 w-auto"
-          />
+          /> -->
         </div>
         <div class="flex items-center justify-end">
           <a
@@ -70,18 +78,17 @@
       <!-- Cardapio -->
       <main class="w-full">
         <h2 class="text-3xl font-bold mb-4 text-center">Nossos Sabores</h2>
-        
+
         <div>
           <h3 class="text-xl font-bold my-4 p-4">Pizzas Salgadas</h3>
           <div
-            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(232px,1fr))] gap-4 p-4">
+            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(232px,1fr))] gap-4 p-4"
+          >
             <div class="flex flex-col gap-3">
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Mussarela"
-                style="
-                  background-image: url('./images/mussarela.jpg');
-                "
+                style="background-image: url('./images/mussarela.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -99,9 +106,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza Napolitana"
-                style="
-                  background-image: url('./images/napolitana.jpeg');
-                "
+                style="background-image: url('./images/napolitana.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -119,9 +124,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza Margherita"
-                style="
-                  background-image: url('./images/margherita.jpg');
-                "
+                style="background-image: url('./images/margherita.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -139,9 +142,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de milho cremoso"
-                style="
-                  background-image: url('./images/milho.jpg');
-                "
+                style="background-image: url('./images/milho.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -159,9 +160,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de milho com bacon"
-                style="
-                  background-image: url('./images/milhoBacon.jpeg');
-                "
+                style="background-image: url('./images/milhoBacon.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -179,9 +178,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de frango com requeijão"
-                style="
-                  background-image: url('./images/frangoRequeijao.jpeg');
-                "
+                style="background-image: url('./images/frangoRequeijao.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -199,9 +196,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de frango com requeijão e milho"
-                style="
-                  background-image: url('./images/frangoCaipira.jpeg');
-                "
+                style="background-image: url('./images/frangoCaipira.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -239,9 +234,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Calabresa com requeijão"
-                style="
-                  background-image: url('./images/calabresaCremosa.jpg');
-                "
+                style="background-image: url('./images/calabresaCremosa.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -259,9 +252,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Brócolis cremoso"
-                style="
-                  background-image: url('./images/brocolis.jpeg');
-                "
+                style="background-image: url('./images/brocolis.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -279,9 +270,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Brócolis com bacon"
-                style="
-                  background-image: url('./images/brocolisBacon.jpeg');
-                "
+                style="background-image: url('./images/brocolisBacon.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -299,9 +288,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Lombo canadense"
-                style="
-                  background-image: url('./images/lombo.jpg');
-                "
+                style="background-image: url('./images/lombo.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -319,9 +306,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Lombo Califórnia"
-                style="
-                  background-image: url('./images/california.jpeg');
-                "
+                style="background-image: url('./images/california.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -339,9 +324,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Presunto cremoso"
-                style="
-                  background-image: url('./images/presunto.jpeg');
-                "
+                style="background-image: url('./images/presunto.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -359,9 +342,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza Portuguesa"
-                style="
-                  background-image: url('./images/portuguesa.jpeg');
-                "
+                style="background-image: url('./images/portuguesa.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -379,9 +360,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Coração"
-                style="
-                  background-image: url('./images/coracao.jpeg');
-                "
+                style="background-image: url('./images/coracao.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -399,9 +378,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de Costela Desfiada"
-                style="
-                  background-image: url('./images/costela.jpeg');
-                "
+                style="background-image: url('./images/costela.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -419,9 +396,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de quatro queijos"
-                style="
-                  background-image: url('./images/4queijos.jpeg');
-                "
+                style="background-image: url('./images/4queijos.jpeg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -438,16 +413,15 @@
           </div>
         </div>
         <div>
-            <h3 class="text-xl font-bold my-4 p-4">Pizzas Doces</h3>
-            <div
-            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(232px,1fr))] gap-4 p-4">
+          <h3 class="text-xl font-bold my-4 p-4">Pizzas Doces</h3>
+          <div
+            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(232px,1fr))] gap-4 p-4"
+          >
             <div class="flex flex-col gap-3">
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza de M&M's"
-                style="
-                  background-image: url('./images/m&ms.jpg');
-                "
+                style="background-image: url('./images/m&ms.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -465,9 +439,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza sabor Prestigio, com muito coco ralado"
-                style="
-                  background-image: url('./images/prestigio.jpg');
-                "
+                style="background-image: url('./images/prestigio.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -485,9 +457,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Pizza sabor brigadeiro, com muito chocolate"
-                style="
-                  background-image: url('./images/brigadeiro.jpg');
-                "
+                style="background-image: url('./images/brigadeiro.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -504,16 +474,15 @@
           </div>
         </div>
         <div>
-            <h3 class="text-xl font-bold my-4 p-4">Bebidas</h3>
-            <div
-            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(232px,1fr))] gap-4 p-4">
+          <h3 class="text-xl font-bold my-4 p-4">Bebidas</h3>
+          <div
+            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(232px,1fr))] gap-4 p-4"
+          >
             <div class="flex flex-col gap-3">
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Cerveja Latão"
-                style="
-                  background-image: url('./images/cevaLatao.jpg');
-                "
+                style="background-image: url('./images/cevaLatao.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -531,9 +500,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Combo 5 unidades de cerveja latão"
-                style="
-                  background-image: url('./images/comboLatao.jpg');
-                "
+                style="background-image: url('./images/comboLatao.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -551,9 +518,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Cerveja garrafa de 1 litro"
-                style="
-                  background-image: url('./images/cevaLitrao.jpg');
-                "
+                style="background-image: url('./images/cevaLitrao.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -571,9 +536,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Refrigerante 2 litros"
-                style="
-                  background-image: url('./images/refri2L.jpg');
-                "
+                style="background-image: url('./images/refri2L.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -591,9 +554,7 @@
               <div
                 class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
                 data-alt="Água Mineral 500ml com ou sem gás"
-                style="
-                  background-image: url('./images/agua.jpg');
-                "
+                style="background-image: url('./images/agua.jpg')"
               ></div>
               <div>
                 <p class="text-white text-base font-medium leading-normal">
@@ -607,33 +568,46 @@
                 </p>
               </div>
             </div>
-          </div>          
+          </div>
         </div>
         <div class="w-full bg-primary/25 rounded-lg my-8">
           <h3 class="text-xl font-bold my-4 p-8 pb-2">Observações</h3>
           <div>
-            <ul class="list-disc list-inside text-gray-400 text-sm font-normal leading-normal p-8 pt-0">
-              <li>Todos os preços são válidos para pizzas de tamanho médio (30cm).</li>
-              <li>Consulte disponibilidade de sabores e bebidas no momento do pedido.</li>
-              <li>Taxa de entrega não incluída e pode variar conforme a localização. Consulte valores</li>
-              <li>Promoções e combos podem ser alterados sem aviso prévio. Confirme valores no ato do pedido</li>
+            <ul
+              class="list-disc list-inside text-gray-400 text-sm font-normal leading-normal p-8 pt-0"
+            >
+              <li>
+                Todos os preços são válidos para pizzas de tamanho médio (30cm).
+              </li>
+              <li>
+                Consulte disponibilidade de sabores e bebidas no momento do
+                pedido.
+              </li>
+              <li>
+                Taxa de entrega não incluída e pode variar conforme a
+                localização. Consulte valores
+              </li>
+              <li>
+                Promoções e combos podem ser alterados sem aviso prévio.
+                Confirme valores no ato do pedido
+              </li>
             </ul>
           </div>
         </div>
-        <a                
-                class="flex w-full max-w-sm mx-auto mt-4 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full h-12 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]"
-                href="https://wa.me/5553991282870?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido..."
-              >
-                <span class="material-symbols-outlined">send</span>
-                <span class="truncate">Faça aqui seu Pedido via </span>
-                <span class="truncate"
-                  ><img
-                    src="./images/whats.svg"
-                    alt="logo-whatsapp"
-                    class="h-4 w-auto"
-                /></span>
-                <span class="truncate">WhatsApp</span>
-              </a>
+        <a
+          class="flex w-full max-w-sm mx-auto mt-4 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full h-12 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]"
+          href="https://wa.me/5553991282870?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido..."
+        >
+          <span class="material-symbols-outlined">send</span>
+          <span class="truncate">Faça aqui seu Pedido via </span>
+          <span class="truncate"
+            ><img
+              src="./images/whats.svg"
+              alt="logo-whatsapp"
+              class="h-4 w-auto"
+          /></span>
+          <span class="truncate">WhatsApp</span>
+        </a>
       </main>
       <!-- Footer -->
       <footer class="bg-black/40 py-8 px-4 text-center text-gray-400">
