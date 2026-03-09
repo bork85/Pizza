@@ -1,0 +1,110 @@
+
+##SALGADAS
+
+Mussarela
+Dobro de mussarela
+R$ 39,90
+
+Napolitana
+Mussarela, Tomate fresco e Parmesão
+R$ 39,90
+
+Margherita
+Mussarela, Tomate e Manjericão frescos
+R$ 39,90
+
+Milho Cremoso
+Mussarela, Milho e Requeijão
+R$ 39,90
+
+Milho e Bacon
+Mussarela, Milho e Bacon
+R$ 44,90
+
+Frango c/ Requeijão
+Mussarela, Frango Desfiado e Requeijão
+R$ 44,90
+
+Frango Caipira
+Mussarela, Frango Desfiado, Milho e Requeijão
+R$ 44,90
+
+Calabresa Acebolada
+Mussarela, Calabresa e Cebola fatiada
+R$ 44,90
+
+Calabresa Cremosa
+Mussarela, Calabresa e Requeijão
+R$ 44,90
+
+Brócolis Cremoso
+Mussarela, Brócolis e Requeijão
+R$ 44,90
+
+Brócolis com Bacon
+Mussarela, Brócolis e Bacon
+R$ 44,90
+
+Lombo Canadense
+Mussarela, Lombo Canadense, Cheddar e Requeijão
+R$ 44,90
+
+Lombo California
+Mussarela, Lombo Canadense e Abacaxi
+R$ 44,90
+
+Presunto
+Mussarela, Presunto, Cheddar e Requeijão
+R$ 44,90
+
+Portuguesa
+Mussarela, Presunto, Ovo, Pimentões, Cebola e Azeitonas
+R$ 49,90
+
+Coração
+Mussarela, Coração e Requeijão
+R$ 54,90
+
+Costela
+Mussarela, Costela Desfiada e Manjericão
+R$ 54,90
+
+Quatro Queijos
+Mussarela, Provolone, Cheddar e Requeijão
+R$ 54,90
+
+###DOCES
+
+M&M's
+Doce de leite, chocolate ao leite e confeitos M&M's
+R$ 39,90
+
+Prestigio
+Doce de leite, chocolate ao leite e coco ralado
+R$ 39,90
+
+Brigadeiro
+Doce de leite, chocolate ao leite e confeitos granulados
+R$ 39,90
+
+###BEBIDAS
+
+Cerveja Latão
+Consulte marcas disponíveis
+R$ 7,00
+
+Cerveja Latão - Combo 5 Un
+Consulte marcas disponíveis
+R$ 30,00
+
+Cerveja Litrão
+Consulte marcas disponíveis
+R$ 15,00
+
+Refrigerante 2Lts
+Consulte marcas disponíveis
+R$ 15,00
+
+Água Mineral 500ml C/ & S/Gás
+Consulte marcas disponíveis
+R$ 3,00
